@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Roupa</title>
+    <link href="index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<script src="jsFunctions.js"></script>
+
+</head>
+
+<body>
+	<div id="headerMenu">
+		<div id="menuTopo">
+        	<img id="logotipo" src="imagens/logoHome.png" onclick="setNewPage('home')">
+        </div>
+
+        <nav>
+            <ul>
+	            <li><a onclick="setNewPage('homemPage')">Homem</a>
+	                <ul>
+	                    <li><a href="">Calçado</a></li>
+	                    <li><a href="">Polos</a></li>
+	                    <li><a href="">Camisas</a></li>
+	                    <li><a href="">Acessórios</a></li>
+	                    <li><a href="">Pijamas</a></li>
+	                </ul>
+                </li>
+	            <li><a onclick="setNewPage('mulherPage')">Mulher</a>
+	                <ul>
+	                    <li><a href="">Calçado</a></li>
+	                    <li><a href="">Polos</a></li>
+	                    <li><a href="">Camisas</a></li>
+	                    <li><a href="">Acessorios</a></li>
+	                    <li><a href="">Pijamas</a></li>
+                </ul>
+                </li>
+	            <li><a onclick="setNewPage('criancaPage')">Crianças</a>
+	                <ul>
+	                    <li><a href="">Calçado</a></li>
+	                    <li><a href="">Polos</a></li>
+	                    <li><a href="">Camisas</a></li>
+	                    <li><a href="">Acessorios</a></li>
+	                    <li><a href="">Pijamas</a></li>
+                	</ul>
+                </li>
+        	</ul>
+        </nav>
+	</div>
+
+    <div id="home" style="display: inline-block;" class="pageDivs">
+
+        <div class="imagemHomem">
+            <img class="homemImagem fade" src="imagens/Home/man1.jpg">
+            <img class="homemImagem" src="imagens/Home/man2.jpg" style="display: none;">
+            <img class="homemImagem" src="imagens/Home/man3.jpg" style="display: none;">
+            <button class="botaoHomem" onclick="setNewPage('homemPage');">Homem</button>
+        </div>
+        <div class="imagemMulher">
+            <img class="mulherImagem fade" src="imagens/Home/woman1.jpg">
+            <img class="mulherImagem" src="imagens/Home/woman2.jpg" style="display: none;">
+            <img class="mulherImagem" src="imagens/Home/woman3.jpg" style="display: none;">
+            <button class="botaoMulher" onclick="setNewPage('mulherPage');">Mulher</button>
+        </div>
+        <div class="imagemKids">
+            <img class="kidsImagem fade" src="imagens/Home/kids1.jpg">
+            <img class="kidsImagem" src="imagens/Home/kids2.jpg" style="display: none;">
+            <img class="kidsImagem" src="imagens/Home/kids3.jpg" style="display: none;">
+            <button class="botaoKids" onclick="setNewPage('criancaPage');">Crianças</button>
+        </div>
+    </div>
+
+     <div id="homemPage" style="display: inline-block;" class="pageDivs">
+     	<div class="imagemHomem2">
+            <img class="homemimagem2" src="imagens/man2.jpg">
+        </div>
+        <div>
+            <span class="titulomancategorias">Categorias</span>
+        </div>
+
+        <div class="categoriasHomem">
+            <div class="sneakersMan">
+                <img class="sneakersImagem" src="imagens/sneakersman.jpg!d">
+                <a href=""><button class="botaoSneakers">Calçado</button></a>
+            </div>
+            <div class="poloMan">
+                <img class="poloImagem" src="imagens/poloman.jpg">
+                <a href=""><button class="botaoPolo">polos</button></a>
+            </div>
+
+            <div class="shirtsMan">
+                <img class="shirtsImagem" src="imagens/shirtsman.jpg">
+                <a href=""><button class="botaoShirts">Camisas</button></a>
+            </div>
+
+            <div class="categoriasHomem2">
+
+                <div class="acessoriosMan">
+                    <img class="acessoriosImagem" src="imagens/acessoriesman.jpg">
+                    <a href=""><button class="botaoAcessorios">Acessorios</button></a>
+                </div>
+                <div class="nightwearMan">
+                    <img class="nightwearImagem" src="imagens/nightwearman.jpg">
+                    <a href=""><button class="botaoNightwear">Pijamas</button></a>
+                </div>
+
+                <div class="allMan">
+                    <img class="allmanImagem" src="imagens/allman.jpg">
+                    <a href=""><button class="botaoAllman">Tudo</button></a>
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+
+     <div id="mulherPage" style="display: none;" class="pageDivs">
+     	<div class="imagemMulher">
+            <img class="mulherimagem2" src="imagens/women2.jpg">
+        </div>
+        <div>
+            <span class="tituloMulhercategorias">Categorias</span>
+        </div>
+
+        <div class="categoriasMulher">
+            <div class="sneakersMulher">
+                <img class="sneakers2Imagem" src="imagens/sneakerswomen.jpg">
+                <a href=""><button class="botaoSneakers2">Calçado</button></a>
+            </div>
+            <div class="blusasWomen">
+                <img class="blusasWomen" src="imagens/blusasWomen.jpg">
+                <a href=""><button class="botaoBlusas">Polos</button></a>
+            </div>
+
+            <div class="dressWomen">
+                <img class="dressImage" src="imagens/dressWomen.jpg">
+                <a href=""><button class="botaoDress">Vestidos</button></a>
+            </div>
+
+            <div class="categoriasMulher2">
+
+                <div class="acessoriosWomen">
+                    <img class="acessorios2Imagem" src="imagens/acessoriesWomen.jpg">
+                    <a href=""><button class="botaoAcessorios2">Acessorios</button></a>
+                </div>
+                <div class="nightwearWomen">
+                    <img class="nightwear2Imagem" src="imagens/nightwearWomen.jpg">
+                    <a href=""><button class="botaoNightwear2">Pijamas</button></a>
+                </div>
+
+                <div class="allWomen">
+                    <img class="allWomenImagem" src="imagens/allwomen.jpg">
+                    <a href=""><button class="botaoAllWomen">Tudo</button></a>
+                </div>
+
+
+            </div>
+        </div>
+     </div>
+
+     <div id="criancaPage" style="display: none;" class="pageDivs">
+     	<div class="pagKids">
+	        <div class="imagemBoy">
+	            <img class="boyImagem" src="imagens/boyimagem.png">
+	            <a href=""><button class="botaoBoy">Meninos</button></a>
+	        </div>
+		    <div class="imagemGirl">
+		        <img class="girlImagem" src="imagens/girlimagem.png">
+		        <button class="botaoGirl">Meninas</button>
+		    </div>
+		</div>
+     </div>
+
+
+
+
+   
+
+
+    <div class="footer">
+        <div class="lista1footer">
+            <div class="titulofooter1">Serviços</div>
+            <ul>
+                <li>Contactos</li>
+                <li>Expedições</li>
+            </ul>
+        </div>
+        <div class="lista2footer">
+            <div class="titulofooter2">Guias</div>
+            <ul>
+                <li>Tamanhos calçado</li>
+                <li>Tamanhos Roupa</li>
+            </ul>
+        </div>
+
+        <div class="lista3footer">
+            <div class="titulofooter3">Sobre nós</div>
+            <ul>
+                <li>Quem somos</li>
+                <li>Qual o nosso foco</li>
+            </ul>
+        </div>
+        <div class="lista4footer">
+            <span class="tituloseguir">Follow us:</span><br>
+            <a href="https://www.facebook.com/"><img class="" src="imagens/facebook.png"></a>
+            <a href="https://www.instagram.com/?hl=en"><img class="" src="imagens/instagra.png"></a>
+            <a href="https://www.linkedin.com/"><img class="" src="imagens/linkedin.png"></a>
+            <a href="https://twitter.com/explore"><img class="" src="imagens/twitter.png"></a>
+
+            <p id="dataHoraText"></p>
+        </div>
+
+    </div>
+
+
+</body>
+<script type="text/javascript">
+	slideInterval = setInterval(function(){  slideImagens(); }, 5000);
+</script>
+</html>
